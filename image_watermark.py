@@ -27,7 +27,7 @@ def convert_images(position, watermark):
 if __name__ == "__main__":
 	# Create main window
 	top = tk.Tk()
-	top.title = "Image watermark"
+	top.title("Image watermark")
 
 	# Select watermark type
 	label_position = tk.Label(text="Watermark position:")
