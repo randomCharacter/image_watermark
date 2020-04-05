@@ -2,6 +2,9 @@
 
 pyinstaller --onefile --windowed --noconsole image_watermark.py
 mkdir dist/watermark
+cp watermark/random.png dist/watermark
 mkdir dist/images
 mkdir dist/out_images
-zip image_watermark.zip dist/*
+pushd dist
+zip image_watermark.zip *
+popd
